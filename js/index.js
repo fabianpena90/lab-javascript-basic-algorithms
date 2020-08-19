@@ -37,7 +37,17 @@ const text = "Contrary to popular belief, Lorem Ipsum is not simply random text.
 
 console.log(text.split(" ").length)
 
-console.log(text.includes('et'));
+
+let words = text.split(" ");
+let numberOfEt = 0
+for (let i = 0; i < words.length; i++) {
+  if(words[i] === 'et'){
+    console.log(words[i])
+    numberOfEt ++
+  }
+}
+
+console.log(numberOfEt.push(words))
 
 let phraseToCheck = "race car";
  for( let i = phraseToCheck.length; i < 0; i-- )
